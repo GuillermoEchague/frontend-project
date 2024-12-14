@@ -3,6 +3,7 @@ import { listCategoriesApi, listEndpointsApi } from './api/Service'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Footer from './components/footer'
 
 
 function App() {
@@ -55,6 +56,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <Footer  />
     </>
   )
 }
