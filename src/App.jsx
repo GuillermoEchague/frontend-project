@@ -1,11 +1,16 @@
-import React from 'react';
-import ContainerCard from './components/ContainerCard';
+import React, { useState } from 'react';
+import Navbar from './components/navbar/Navbar';
+import ContainerCard from './components/containerCard'
+import Footer from './components/footer';
 
 function App() {
+  const [selectedData, setSelectedData] = useState(null);
+
   return (
     <>
-      <h1>Anime</h1>
-      <ContainerCard />
+      <Navbar onSelect={setSelectedData} />
+      <ContainerCard selectedData={selectedData} />
+      <Footer />
     </>
   );
 }

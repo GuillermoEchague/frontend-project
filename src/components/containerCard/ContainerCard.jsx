@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Card from "./Card/Card";
-import { listCategoriesCountApi } from "../api/Service";
+import Card from "../Card";
+import { listCategoriesCountApi } from "../../api/Service";
 import "./ContainerCard.css";
 
-const ContainerCard = () => {
+const ContainerCard = ({ selectedData }) => {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [dataBody, setDataBody] = useState([]);
@@ -12,11 +12,8 @@ const ContainerCard = () => {
     const fetchEndpoints = async () => {
       setIsLoading(true);
       try {
-        const data = await listCategoriesCountApi("hug", 5);
+        const data = await listCategoriesCountApi("hug", selectedData.number );
         setDataBody(data.results || []);
-        await listCategoriesCountApi("hug", 8).then((data) => {
-          setDataBody(data.results || []);
-        });
         setError(null);
       } catch (err) {
         setError(err.message);
@@ -27,7 +24,7 @@ const ContainerCard = () => {
     };
 
     fetchEndpoints();
-  }, []);
+  }, [selectedData]);
 
   return (
     <div className="container-card">
