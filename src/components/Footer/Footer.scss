@@ -1,0 +1,98 @@
+@import '../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+
+.footer {
+    background: linear-gradient(45deg, #2a1919, #940202);
+    color: white;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilos para la sección principal del footer */
+  .footer__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Logo */
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer__logo-img {
+    max-width: 150px;
+  }
+  
+  /* Enlaces del footer */
+  .footer__links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer__links li {
+    margin: 0;
+  }
+  
+  .footer__links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .footer__links a:hover {
+    color: #ff6347; /* Color de hover */
+  }
+  
+  /* Redes sociales del footer */
+  .footer__socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer__social-link {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer__social-link:hover {
+    color: #ff6347; /* Color de hover */
+    transform: scale(1.2); /* Efecto de escala */
+  }
+  
+  /* Copyright */
+  .footer__copyright {
+    font-size: 14px;
+    color: #bbb;
+    margin-top: 20px;
+  }
+  
+  /* Estilos adicionales para mejorar la experiencia móvil */
+  @media (max-width: 768px) {
+    .footer__content {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  
+    .footer__links ul {
+      display: block;
+      margin-top: 20px;
+    }
+  
+    .footer__socials {
+      margin-top: 20px;
+    }
+  }
+  

@@ -8,14 +8,15 @@
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background: linear-gradient(45deg, #2a1919, #940202);
     font-family: Arial, sans-serif;
+    
   }
   
   .filtros__title {
     text-align: center;
     font-size: 1.5rem;
-    color: #333;
+    color: #ffffff;
   }
   
   .filtros__container {
@@ -33,19 +34,19 @@
   .filtros__label {
     margin-bottom: 8px;
     font-weight: bold;
-    color: #555;
+    color: #ffffff;
     width: 90%;
   }
   
   .filtros__select {
     padding: 8px;
     font-size: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     border-radius: 4px;
     width: 100%;
   }
   
-  /* Responsividad */
+
   @media (max-width: 600px) {
     .filtros__container {
       flex-direction: column;

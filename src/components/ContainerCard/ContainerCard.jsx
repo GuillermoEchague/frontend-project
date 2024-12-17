@@ -8,7 +8,7 @@ const ContainerCard = () => {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [dataBody, setDataBody] = useState([]);
-  const [firstOption, setFirstOption] = useState(8); 
+  const [firstOption, setFirstOption] = useState(16); 
   const [secondOption, setSecondOption] = useState("hug"); 
 
   useEffect(() => {
