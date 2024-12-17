@@ -1,0 +1,53 @@
+.filtros {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .filtros__title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .filtros__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .filtros__group {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Hace que los elementos se distribuyan equitativamente */
+  }
+  
+  .filtros__label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .filtros__select {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 600px) {
+    .filtros__container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
