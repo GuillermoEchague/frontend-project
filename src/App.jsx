@@ -1,5 +1,5 @@
 import React from 'react';
-import ContainerCard from './components/ContainerCard';
+import ContainerCard from './components/ContainerCard/ContainerCard';
 
 
 function App() {

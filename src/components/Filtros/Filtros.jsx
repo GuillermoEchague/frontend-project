@@ -1,5 +1,5 @@
 import React from "react";
-import "./Filtros.css";
+import "./Filtros.scss";
 
 const Filtros = ({ firstOption, setFirstOption, secondOption, setSecondOption }) => {
   const firstComboOptions = [1, 8, 16];
@@ -27,7 +27,7 @@ const Filtros = ({ firstOption, setFirstOption, secondOption, setSecondOption })
           </select>
         </div>
 
-        {/* Segundo Combobox */}
+     
         <div className="filtros__group">
           <label className="filtros__label" htmlFor="second-combo">
             Opciones de texto:

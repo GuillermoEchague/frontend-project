@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
-import Card from "./Card/Card";
-import Filtros from "./Filtros/Filtros"; 
-import { listCategoriesCountApi } from "../api/Service";
-import "./ContainerCard.css";
+import Card from "../Card/Card";
+import Filtros from "../Filtros/Filtros"; 
+import { listCategoriesCountApi } from "../../api/Service";
+import "./ContainerCard.scss";
 
 const ContainerCard = () => {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [dataBody, setDataBody] = useState([]);
-  const [firstOption, setFirstOption] = useState(8); // Estado para la opción numérica
-  const [secondOption, setSecondOption] = useState("hug"); // Estado para la opción de texto
+  const [firstOption, setFirstOption] = useState(8); 
+  const [secondOption, setSecondOption] = useState("hug"); 
 
   useEffect(() => {
     const fetchEndpoints = async () => {
@@ -27,11 +27,11 @@ const ContainerCard = () => {
     };
 
     fetchEndpoints();
-  }, [firstOption, secondOption]); // Se actualiza cuando cambian las opciones
+  }, [firstOption, secondOption]); 
 
   return (
     <div className="container-card">
-      {/* Componente Filtros en la parte superior */}
+   
       <Filtros
         firstOption={firstOption}
         setFirstOption={setFirstOption}
@@ -39,7 +39,7 @@ const ContainerCard = () => {
         setSecondOption={setSecondOption}
       />
 
-      {/* Cuerpo principal */}
+     
       {isLoading ? (
         <p className="container-card--loading">Loading...</p>
       ) : error ? (
