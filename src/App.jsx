@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <ContainerCard />
-      <Footer></Footer>
+      <Footer />
      
     </>
   );
