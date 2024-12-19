@@ -1,9 +1,24 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import { listEndpointsApi } from '../../api/Service'
 import "./Filtros.scss";
 
 const Filtros = ({ firstOption, setFirstOption, secondOption, setSecondOption }) => {
   const firstComboOptions = [1, 8, 16];
-  const secondComboOptions = ["hug", "waifu", "neko"];
+  const [endpoints, setEndpoints] = useState([]);
+
+  useEffect(() => {
+    const fetchEndpoints = async () => {
+      try {
+        const endpoints = await listEndpointsApi();
+        const stringArray = Object.keys(endpoints);
+        setEndpoints(stringArray);
+      } catch (err) {
+        console.error('Failed to fetch endpoints:', err);
+      }
+    };
+
+    fetchEndpoints();
+  }, []);
 
   return (
     <div className="filtros">
@@ -38,7 +53,7 @@ const Filtros = ({ firstOption, setFirstOption, secondOption, setSecondOption })
             value={secondOption}
             onChange={(e) => setSecondOption(e.target.value)}
           >
-            {secondComboOptions.map((option) => (
+            {endpoints.map((option) => (
               <option key={option} value={option}>
                 {option}
               </option>
