@@ -1,11 +1,15 @@
 import React from 'react';
-import ContainerCard from './components/ContainerCard';
+import ContainerCard from './components/ContainerCard/ContainerCard';
+import Footer from './components/Footer/Footer';
+import './main.scss';
+
 
 function App() {
   return (
     <>
-      <h1>Anime</h1>
       <ContainerCard />
+      <Footer />
+     
     </>
   );
 }
