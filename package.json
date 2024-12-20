@@ -1,7 +1,7 @@
 {
   "name": "frontend-project",
   "private": true,
-  "homepage": "https:/guillermoechague/.github.io/frontend-project/",
+  "homepage": "https:/guillermoechague.github.io/frontend-project/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
