@@ -1,28 +1,28 @@
+@use '../../variables.scss' as vars;
+.container-card {
+display: flex;
+flex-direction: column;
+gap: 20px;
+padding: 20px;
 
-   .container-card {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    
-  }
+}
   
-  .container-card__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    
-  }
+.container-card__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
   
-  .container-card--loading,
-  .container-card--error {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #555555;
-  }
+}
   
-  .container-card--error {
-    color: red;
-    text-align: center;
-    font-size: 1.2rem;
-  }
+.container-card--loading,
+.container-card--error {
+  text-align: center;
+  font-size: 1.2rem;
+  color: vars.$color-loading;
+}
+  
+.container-card--error {
+  color: vars.$color-error;
+  text-align: center;
+  font-size: 1.2rem;
+}

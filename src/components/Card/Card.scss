@@ -1,16 +1,13 @@
-
+@use '../../variables.scss' as vars;
 .card {
-  background: linear-gradient(45deg, #2a1919, #940202);
-  border: 1px solid #ddd;
+  background: vars.$primary-color;
+  border: 1px solid vars.$color-blanco;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  overflow: hidden;
-  
 }
 
 .card:hover {
-  box-shadow: 0 8px 12px #ac0d0d;
+  box-shadow: 0 8px 12px vars.$color-hover-card;
 }
 
 .card__title {
@@ -18,7 +15,7 @@
   max-height: 60px;
   font-size: 1rem;
   font-weight: bold;
-  color: #ffffff;
+  color: vars.$color-blanco;
   padding: 10px;
 }
 
@@ -26,5 +23,5 @@
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid vars.$color-blanco;
 }
