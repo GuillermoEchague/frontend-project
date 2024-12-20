@@ -1,0 +1,28 @@
+
+   .container-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    color: black;
+  }
+  
+  .container-card__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    
+  }
+  
+  .container-card--loading,
+  .container-card--error {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .container-card--error {
+    color: red;
+    text-align: center;
+    font-size: 1.2rem;
+  }
