@@ -1,0 +1,88 @@
+@import '../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+
+.navbar {
+  background: linear-gradient(45deg, #2a1919, #940202);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    &-img {
+      max-width: 120px;
+    }
+  }
+
+  &__toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 20px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    li {
+      margin: 0;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #ff6347;
+      }
+    }
+  }
+
+  &__links--open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #940202;
+    padding: 10px;
+    border-radius: 8px;
+  }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .navbar {
+    &__links {
+      display: none;
+      flex-direction: column;
+    }
+
+    &__toggle {
+      display: block;
+    }
+  }
+}
