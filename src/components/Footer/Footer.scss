@@ -1,15 +1,14 @@
-@import '../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
-
+@use '../../variables.scss' as vars;
 .footer {
-    background: linear-gradient(45deg, #2a1919, #940202);
-    color: white;
+    background: vars.$primary-color;
+    color: vars.$color-blanco;
     padding: 40px 0;
     font-family: 'Arial', sans-serif;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
   }
   
-  /* Estilos para la sección principal del footer */
+  
   .footer__content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -18,7 +17,7 @@
     margin-bottom: 20px;
   }
   
-  /* Logo */
+
   .footer__logo {
     display: flex;
     justify-content: center;
@@ -29,7 +28,7 @@
     max-width: 150px;
   }
   
-  /* Enlaces del footer */
+  
   .footer__links ul {
     list-style: none;
     padding: 0;
@@ -43,7 +42,7 @@
   }
   
   .footer__links a {
-    color: white;
+    color: vars.$color-blanco;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
@@ -51,10 +50,10 @@
   }
   
   .footer__links a:hover {
-    color: #ff6347; /* Color de hover */
+    color: vars.$color-link; 
   }
   
-  /* Redes sociales del footer */
+  
   .footer__socials {
     display: flex;
     justify-content: center;
@@ -62,24 +61,23 @@
   }
   
   .footer__social-link {
-    color: white;
+    color: vars.$color-blanco;
     font-size: 24px;
     transition: color 0.3s ease, transform 0.3s ease;
   }
   
   .footer__social-link:hover {
-    color: #ff6347; /* Color de hover */
-    transform: scale(1.2); /* Efecto de escala */
+    color: vars.$color-link; 
+    transform: scale(1.2); 
   }
-  
-  /* Copyright */
+ 
   .footer__copyright {
     font-size: 14px;
-    color: #bbb;
+    color: vars.$color-blanco;
     margin-top: 20px;
   }
   
-  /* Estilos adicionales para mejorar la experiencia móvil */
+  
   @media (max-width: 768px) {
     .footer__content {
       grid-template-columns: 1fr;

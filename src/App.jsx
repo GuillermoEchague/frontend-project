@@ -1,16 +1,11 @@
 import React from 'react';
-import ContainerCard from './components/ContainerCard/ContainerCard';
-import Footer from './components/Footer/Footer';
-import Navbar from './components/Navbar';
-import './main.scss';
+import Home from './screens/Home';
 
 
 function App() {
   return (
     <>
-      <Navbar/>
-      <ContainerCard />
-      <Footer />
+      <Home />
     </>
   );
 }
