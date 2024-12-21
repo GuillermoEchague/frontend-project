@@ -1,13 +1,16 @@
 {
   "name": "frontend-project",
   "private": true,
+  "homepage": "https:/guillermoechague.github.io/frontend-project/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages - dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
