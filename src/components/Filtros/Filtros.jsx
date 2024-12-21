@@ -23,10 +23,10 @@ const Filtros = ({ firstOption, setFirstOption, secondOption, setSecondOption })
   return (
     <div className="filtros">
       <div className="filtros__container">
-        {/* Primer Combobox */}
+        
         <div className="filtros__group">
           <label className="filtros__label" htmlFor="first-combo">
-            Opciones numéricas:
+            Cantidad de Cartas a mostrar:
           </label>
           <select
             id="first-combo"
@@ -45,7 +45,7 @@ const Filtros = ({ firstOption, setFirstOption, secondOption, setSecondOption })
      
         <div className="filtros__group">
           <label className="filtros__label" htmlFor="second-combo">
-            Opciones de texto:
+            Categoría Anime:
           </label>
           <select
             id="second-combo"

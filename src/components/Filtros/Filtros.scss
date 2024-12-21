@@ -1,3 +1,5 @@
+@use '../../variables.scss' as vars;
+
 .filtros {
     display: flex;
     flex-direction: column;
@@ -6,9 +8,9 @@
     min-width: 80%;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid vars.$color-blanco;
     border-radius: 8px;
-    background: linear-gradient(45deg, #2a1919, #940202);
+    background: vars.$primary-color;
     font-family: Arial, sans-serif;
     
   }
@@ -16,7 +18,7 @@
   .filtros__title {
     text-align: center;
     font-size: 1.5rem;
-    color: #ffffff;
+    color: vars.$color-blanco;
   }
   
   .filtros__container {
@@ -34,14 +36,14 @@
   .filtros__label {
     margin-bottom: 8px;
     font-weight: bold;
-    color: #ffffff;
+    color: vars.$color-blanco;
     width: 90%;
   }
   
   .filtros__select {
     padding: 8px;
     font-size: 1rem;
-    border: 1px solid #ffffff;
+    border: 1px solid vars.$color-blanco;
     border-radius: 4px;
     width: 100%;
   }
